@@ -1,0 +1,1 @@
+This was made as a funny joke project between me and another guy - Don't take it too seriously :). It just simulates stupid questions.
