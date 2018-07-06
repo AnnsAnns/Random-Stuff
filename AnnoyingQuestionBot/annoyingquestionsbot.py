@@ -5,7 +5,7 @@ import random
 token = "YOUR TOKEN"
 
 description = '''Simulates stupid questions'''
-bot = commands.Bot(command_prefix='t', description=description)
+bot = commands.Bot(command_prefix='s', description=description)
 one = ["can ",
                 "can to ",
                 "you can ",
@@ -50,8 +50,8 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-@bot.command(name='homleg')
-async def homleg():
+@bot.command(name='tupidquestion')
+async def tupidquestion():
     """Gives you a stupid question"""
     await bot.say(random.choice(one) + random.choice(two) + random.choice(annoying) + random.choice(three) + random.choice(runningoutofnames))
 
