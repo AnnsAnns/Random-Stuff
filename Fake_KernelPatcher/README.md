@@ -1,0 +1,1 @@
+A program that just prints random garbage I created to prank people that really annoy me with stupid questions
