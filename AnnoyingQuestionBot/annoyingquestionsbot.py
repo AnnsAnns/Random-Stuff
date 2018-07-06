@@ -4,16 +4,16 @@ import random
 
 token = "YOUR TOKEN"
 
-description = '''like thomleg except more intelligent'''
+description = '''Simulates stupid questions'''
 bot = commands.Bot(command_prefix='t', description=description)
-thomone = ["can ",
+one = ["can ",
                 "can to ",
                 "you can ",
                 "any here ",
                 "any here can ",
                 "any here can to ",
                 "can you "]
-thomtwo = ["pls help ",
+two = ["pls help ",
                 "pls help to ",
                 "pls to help with ",
                 "please help with ",
@@ -26,7 +26,7 @@ thomtwo = ["pls help ",
                 "reply me pls ",
                 "reply pls about ",
                 "help me with "]
-thomannoying = ["build atmosphere ",
+annoying = ["build atmosphere ",
                 "make atmosphere ",
                 "build atmos ",
                 "make atmos ",
@@ -35,10 +35,10 @@ thomannoying = ["build atmosphere ",
                 "versionlist ",
                 "setup bot ",
                 "webhook "]
-thomthree = ["please ",
+three = ["please ",
                 "i dont understand ",
                 "then do "]
-thomerunningoutofnames = ["?",
+runningoutofnames = ["?",
                 "!",
                 "..."]
 
@@ -52,7 +52,7 @@ async def on_ready():
 
 @bot.command(name='homleg')
 async def homleg():
-    """Gives you a thomleg question"""
-    await bot.say(random.choice(thomone) + random.choice(thomtwo) + random.choice(thomannoying) + random.choice(thomthree) + random.choice(thomerunningoutofnames))
+    """Gives you a stupid question"""
+    await bot.say(random.choice(one) + random.choice(two) + random.choice(annoying) + random.choice(three) + random.choice(runningoutofnames))
 
 bot.run(token)
