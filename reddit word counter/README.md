@@ -1,0 +1,1 @@
+This simply takes the Stream of newest comments and puts the into a simple json-dict for data science.
